@@ -10,11 +10,14 @@
 
 # color vars
 
-eval my_gray='%{$fg[cyan]%}'
-eval my_orange='%{$fg[yellow]%}'
+eval my_gray='%{$fg[gray]%}'
+eval my_orange='%{$fg_bold[yellow]%}'
 eval my_blue='%{$fg[blue]%}'
 eval my_purple='%{$fg[magenta]%}'
-eval my_lightblue='%{$fg_bold[blue]%}'
+eval my_dark_purple='%{$fg_bold[magenta]%}'
+eval my_red='%{$fg[red]%}'
+eval my_dark_red='%{$fg_bold[red]%}'
+eval my_yellow='%{$fg[yellow]%}'
 eval my_red='%{$fg[red]%}'
 
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
@@ -28,10 +31,10 @@ PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
 # right prompt
-RPROMPT='$my_gray%n@%m%{$reset_color%}% $my_gray|$my_purple%*$my_gray|%{$reset_color%}'
+RPROMPT='$my_red%n@$my_dark_red%m%{$reset_color%}% $my_gray|$my_purple%*$my_gray|%{$reset_color%}'
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="$my_lightblue(branch:"
+ZSH_THEME_GIT_PROMPT_PREFIX="$my_yellow(branch:"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange*%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$my_lightblue)%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="$my_yellow)%{$reset_color%}"
