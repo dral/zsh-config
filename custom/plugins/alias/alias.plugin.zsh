@@ -7,3 +7,6 @@ alias df='df -H'
 alias du='du -H'
 alias tailf='tail -f -n 60'
 #alias cls='clear'
+
+#alias for opening projects in sublime text
+alias sttp='st *.sublime-project'
