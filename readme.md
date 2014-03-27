@@ -1,4 +1,4 @@
-# Oh my zsh
+# zsh config
 
 ## Installation
 
