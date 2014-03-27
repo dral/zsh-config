@@ -1,6 +1,8 @@
-#Oh my zsh
+# Oh my zsh
 
-Install oh-my-zsh
+## Installation
+
+Get oh-my-zsh
 
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
@@ -10,6 +12,5 @@ Change shell:
 
 Get configuration:
 
-	git clone ... ~/.zsh
+	git clone git@gitlab.com:sys/zsh-config.git ~/.zsh
 	cp ~/.zsh/.zshrc.template ~/.zshrc
-
