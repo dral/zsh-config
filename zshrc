@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/.zsh/custom
 
 # Path
-export PATH="$PATH:$HOME/bin:$"
+export PATH="./node_modules/.bin:$PATH:$HOME/bin:$"
 
 # Lang configuration
 export LC_CTYPE=en_US.UTF-8
@@ -18,7 +18,7 @@ ZSH_THEME="consoleColors"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(python manhtml latex git git-flow gradle brew node nvm npm osx sublime sublimeProject alias)
+plugins=(git npm nvm node docker alias)
 
 # Prepare
 source $ZSH/oh-my-zsh.sh
